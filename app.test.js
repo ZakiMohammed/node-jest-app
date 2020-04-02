@@ -1,13 +1,25 @@
 const app = require('./app');
 
 describe('Testing App', function () {
-    it('should add numbers', function () {
-       expect(app.add(2, 2)).toBe(4);
-    });
+    describe('Add', function () {
 
-    it('should add numbers', function () {
-        expect(app.add(2, 2)).not.toBe(5);
-     });
+      const initDB = () => console.log('init db');
+      const closeDB = () => console.log('close db');
+
+      // beforeEach(() => initDB());
+      // afterEach(() => closeDB());
+
+      beforeAll(() => initDB());
+      afterAll(() => closeDB());
+
+      it('should add numbers', function () {
+         expect(app.add(2, 2)).toBe(4);
+      });
+  
+      it('should add numbers', function () {
+          expect(app.add(2, 2)).not.toBe(5);
+       });
+    });
 
      it('should be null', function () {
         expect(app.isNull()).toBeNull();
