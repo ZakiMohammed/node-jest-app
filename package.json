@@ -1,0 +1,23 @@
+{
+  "name": "jest-app",
+  "version": "1.0.0",
+  "description": "Treaversy Media Node JEST for beginners ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZakiMohammed/node-jest-app.git"
+  },
+  "keywords": [
+    "node",
+    "jest"
+  ],
+  "author": "Zaki Mohammed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZakiMohammed/node-jest-app/issues"
+  },
+  "homepage": "https://github.com/ZakiMohammed/node-jest-app#readme"
+}
